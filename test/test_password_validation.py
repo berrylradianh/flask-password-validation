@@ -1,5 +1,5 @@
 import unittest
-from app.routes import validate_password
+from utils.validators import validate_password
 
 class TestPasswordValidation(unittest.TestCase):
     def test_Fxmedia12345678(self):
@@ -17,12 +17,12 @@ class TestPasswordValidation(unittest.TestCase):
     def test_ShortPwd(self):
         result, message = validate_password('ShortPwd1!')
         self.assertFalse(result)
-        self.assertEqual(message, "Password must be at least 15 characters long")
+        self.assertEqual(message, "Password must be between 8 and 15 characters long")
 
     def test_Password(self):
         result, message = validate_password('Password')
         self.assertFalse(result)
-        self.assertEqual(message, "Password must be at least 15 characters long")
+        self.assertEqual(message, "Password must be between 8 and 15 characters long")
 
     def test_lowercaseonly(self):
         result, message = validate_password('lowercaseonly')
