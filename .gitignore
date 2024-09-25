@@ -7,7 +7,7 @@ __pycache__/
 *$py.class
 
 # local environment or configuration files
-.env
+.env.json
 
 # log files and SQLite database files
 *.log

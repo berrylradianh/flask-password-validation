@@ -64,7 +64,7 @@ Follow these steps to install and run the project:
 
 6. Start the Flask server:
     ```bash
-        flask run
+    flask run
     ```
 
 7. Open your browser and navigate to http://127.0.0.1:5000/validate_password to test the password validation functionality.
