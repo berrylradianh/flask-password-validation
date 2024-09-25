@@ -1,0 +1,27 @@
+# virtual environment directory
+venv/
+
+# Python bytecode and cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# local environment or configuration files
+.env
+
+# log files and SQLite database files
+*.log
+*.sqlite3
+
+# editor-specific directories or settings (if using an IDE)
+.vscode/
+.idea/
+
+# macOS system files
+.DS_Store
+
+# Vim swap files
+*.swp
+
+# pip metadata for dependencies
+pip-wheel-metadata/
